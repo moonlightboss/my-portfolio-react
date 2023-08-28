@@ -7,7 +7,7 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  return (
+  return <>
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
+  </>
 };
 
 export default Navbar;
