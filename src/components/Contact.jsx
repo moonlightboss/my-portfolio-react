@@ -7,15 +7,63 @@ import {EarthCanvas} from "./canvas/index.js";
 import {SectionWrapper} from "../hoc";
 import {slideIn} from "../utils/motion.js";
 
+
 const Contact = () => {
+    const myEmailJSSettings = () => {
+        const serviceID = process.env.REACT_APP_SERVICE_ID;
+        const templateID = process.env.REACT_APP_TEMPLATE_ID;
+        const myEmail = process.env.REACT_APP_MY_EMAIL;
+        const apiKey = process.env.REACT_APP_PUBLIC_KEY;
+
+        return{ serviceID, templateID, myEmail, apiKey};
+    };
+
+
     const formRef = useRef();
     const [form, setForm] = useState({
         name: '', email: '', message: '',
     });
     const [loading, setLoading] = useState(false);
     const handleChange = (e) => {
+        const {name, value} = e.target;
+
+        setForm({...form, [name]: value})
     };
     const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const { serviceID, templateID, myEmail, apiKey } = myEmailJSSettings();
+
+        emailjs.send(
+            serviceID,
+            templateID,
+            {
+                from_name: form.name,
+                to_name: 'Vladislav',
+                from_email: form.email,
+                to_email: myEmail,
+                message: form.message
+            },
+            apiKey,
+        )
+            .then(() => {
+                setLoading(false);
+                alert('Thank you. I will get back to you as soon as possible.');
+
+                setForm({
+                    name: '',
+                    email: '',
+                    message: '',
+                })
+
+            }, (error) => {
+                setLoading(false)
+
+                console.log(error);
+
+                alert('something went wrong.')
+            })
     };
 
 
