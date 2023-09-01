@@ -7,17 +7,9 @@ import {EarthCanvas} from "./canvas/index.js";
 import {SectionWrapper} from "../hoc";
 import {slideIn} from "../utils/motion.js";
 
+import {myKeys} from "../../emailjsapi.js";
 
 const Contact = () => {
-    const myEmailJSSettings = () => {
-        const serviceID = process.env.REACT_APP_SERVICE_ID;
-        const templateID = process.env.REACT_APP_TEMPLATE_ID;
-        const myEmail = process.env.REACT_APP_MY_EMAIL;
-        const apiKey = process.env.REACT_APP_PUBLIC_KEY;
-
-        return{ serviceID, templateID, myEmail, apiKey};
-    };
-
 
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -33,19 +25,17 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        const { serviceID, templateID, myEmail, apiKey } = myEmailJSSettings();
-
         emailjs.send(
-            serviceID,
-            templateID,
+            myKeys.serviceID,
+            myKeys.templateID,
             {
                 from_name: form.name,
                 to_name: 'Vladislav',
                 from_email: form.email,
-                to_email: myEmail,
+                to_email: myKeys.myEmail,
                 message: form.message
             },
-            apiKey,
+            myKeys.apiKey,
         )
             .then(() => {
                 setLoading(false);
