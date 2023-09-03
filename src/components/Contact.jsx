@@ -7,7 +7,7 @@ import {EarthCanvas} from "./canvas/index.js";
 import {SectionWrapper} from "../hoc";
 import {slideIn} from "../utils/motion.js";
 
-import {myKeys} from "../../emailjsapi.js";
+import {myKeys} from "../../emailjsapi.js"; //create secret file to save my keys
 
 const Contact = () => {
 
