@@ -8,21 +8,20 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
     docker,
-    meta,
-    carrent,
     jobit,
-    tripguide,
     threejs,
   } from "../assets";
   import sunweb from "../assets/company/sunweb.png"
   import peredelano from "../assets/company/peredelano.jpg"
+  import cryptonomicon from "../assets/cryptonomicon.png"
+  import shopapp from "../assets/shopapp.png"
+  import weatherapp from "../assets/weatherapp.png"
   
   export const navLinks = [
     {
@@ -78,10 +77,6 @@ import {
     {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -187,7 +182,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: cryptonomicon,
       source_code_link: "https://github.com/moonlightboss/crpt",
     },
     {
@@ -208,7 +203,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: weatherapp,
       source_code_link: "https://github.com/moonlightboss/weatherapp",
     },
     {
@@ -229,7 +224,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: shopapp,
       source_code_link: "https://github.com/moonlightboss/shopapp",
     },
   ];
