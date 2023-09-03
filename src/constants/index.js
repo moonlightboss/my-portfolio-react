@@ -16,12 +16,13 @@ import {
     figma,
     docker,
     meta,
-    tesla,
     carrent,
     jobit,
     tripguide,
     threejs,
   } from "../assets";
+  import sunweb from "../assets/company/sunweb.png"
+  import peredelano from "../assets/company/peredelano.jpg"
   
   export const navLinks = [
     {
@@ -114,28 +115,27 @@ import {
   
   const experiences = [
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Vue Developer",
+      company_name: "SunWeb55",
+      icon: sunweb,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2021 - May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Vue and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Nuxt 3 developer",
+      company_name: "PERDELANO CONF",
+      icon: peredelano,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "May 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Nuxt and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "I help the community with development tips",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
@@ -170,16 +170,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Cryptonomicon",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-platform that allows users to easily access and monitor the prices of various cryptocurrencies. With a user-friendly interface, users can effortlessly view real-time and historical price data for different digital coins.",
       tags: [
         {
-          name: "react",
+          name: "vue3",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
@@ -188,15 +188,15 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/moonlightboss/crpt",
     },
     {
-      name: "Job IT",
+      name: "Simple Weather app",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The weather app is an intuitive web application that allows users to stay informed about current weather conditions and forecasts. With a clean and user-friendly interface, it provides users with accurate and up-to-date weather information for any location in the world",
       tags: [
         {
-          name: "react",
+          name: "Vue3",
           color: "blue-text-gradient",
         },
         {
@@ -204,24 +204,24 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/moonlightboss/weatherapp",
     },
     {
-      name: "Trip Guide",
+      name: "Shop App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The shoe store web application is a user-friendly platform that offers a wide selection of footwear for customers to browse and purchase. With an intuitive interface and a diverse collection of shoes for different styles and occasions, the app provides a seamless shopping experience for shoe enthusiasts.",
       tags: [
         {
-          name: "nextjs",
+          name: "vue3",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
@@ -230,7 +230,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/moonlightboss/shopapp",
     },
   ];
   
