@@ -14,7 +14,6 @@ import {
     git,
     figma,
     docker,
-    jobit,
     threejs,
   } from "../assets";
   import sunweb from "../assets/company/sunweb.png"
