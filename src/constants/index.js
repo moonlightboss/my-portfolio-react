@@ -21,7 +21,7 @@ import {
   import cryptonomicon from "../assets/cryptonomicon.png"
   import shopapp from "../assets/shopapp.png"
   import weatherapp from "../assets/weatherapp.png"
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -36,7 +36,7 @@ import {
       title: "Contact",
     },
   ];
-  
+
   const services = [
     {
       title: "Web Developer",
@@ -55,7 +55,7 @@ import {
       icon: creator,
     },
   ];
-  
+
   const technologies = [
     {
       name: "HTML 5",
@@ -106,14 +106,14 @@ import {
       icon: docker,
     },
   ];
-  
+
   const experiences = [
     {
       title: "Vue Developer",
-      company_name: "SunWeb55",
+      company_name: "Sunweb55",
       icon: sunweb,
       iconBg: "#E6DEDD",
-      date: "Feb 2021 - May 2023",
+      date: "Jan. 2021 - May 2023",
       points: [
         "Developing and maintaining web applications using Vue and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -125,7 +125,7 @@ import {
       company_name: "PERDELANO CONF",
       icon: peredelano,
       iconBg: "#E6DEDD",
-      date: "May 2023 - Present",
+      date: "June 2023 - Present",
       points: [
         "Developing and maintaining web applications using Nuxt and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -134,7 +134,7 @@ import {
       ],
     },
   ];
-  
+
   const testimonials = [
     {
       testimonial:
@@ -161,7 +161,7 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+
   const projects = [
     {
       name: "Cryptonomicon",
@@ -227,5 +227,5 @@ import {
       source_code_link: "https://github.com/moonlightboss/shopapp",
     },
   ];
-  
+
   export { services, technologies, experiences, testimonials, projects };
